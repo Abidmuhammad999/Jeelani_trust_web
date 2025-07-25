@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Quthubuzzaman | Jeelani Trust</title>
+  <script>
+    fetch("meta.html")
+      .then(res => res.text())
+      .then(data => document.head.insertAdjacentHTML("afterbegin", data));
+  </script>
+
+  <link rel="icon" type="image/png" class="bg-white" href="assets/img/LOGO-ico.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Playfair+Display&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="tailwind.config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-600 font-quicksand ">
+  <!-- Navbar -->
+  <nav
+    class="bg-white shadow-sm border-b border-white border-opacity-10 fixed top-0 left-0 w-full z-50 mb-5 text-trust-900">
+    <div class="max-w-full ">
+      <div
+        class="flex items-center justify-between h-[72px] px-[10px] relative shadow-[0_2px_18px_0_rgba(129,162,182,0.2)] bg-white">
+
+        <!-- Logo -->
+        <div class="flex items-center space-x-2 group">
+          <!-- Logo -->
+          <img src="assets/img/LOGO Without Text.png" alt="Jeelani Trust Logo" class="h-12 w-auto">
+
+          <!-- Text Block -->
+          <div class="flex flex-col leading-tight">
+            <a href="index.html" class="font-bold text-2xl tracking-tight font-cinzel sm:text-md">
+              Jeelani Trust
+            </a>
+
+          </div>
+        </div>
+
+
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex space-x-1">
+          <a href="#"
+            class="nav-link px-4 py-2 rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-200 flex items-center">
+            <span
+              class="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-gold after:w-0 hover:after:w-full after:transition-all after:duration-300">Home</span>
+          </a>
+          <a href="#about"
+            class="nav-link px-4 py-2 rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-200 flex items-center">
+            <span
+              class="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-gold after:w-0 hover:after:w-full after:transition-all after:duration-300">About
+              Us</span>
+          </a>
+          <a href="#programs"
+            class="nav-link px-4 py-2 rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-200 flex items-center">
+            <span
+              class="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-gold after:w-0 hover:after:w-full after:transition-all after:duration-300">Initiatives</span>
+          </a>
+          <a href="#gallery"
+            class="nav-link px-4 py-2 rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-200 flex items-center">
+            <span
+              class="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-gold after:w-0 hover:after:w-full after:transition-all after:duration-300">Gallery</span>
+          </a>
+          <a href="#contact"
+            class="nav-link px-4 py-2 rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-200 flex items-center">
+            <span
+              class="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-gold after:w-0 hover:after:w-full after:transition-all after:duration-300">Contact</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          class="md:hidden text-trust-700 focus:outline-none p-2 rounded-full hover:bg-white hover:bg-opacity-10 transition-colors"
+          aria-label="Toggle mobile menu" id="menu-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-trust-900 bg-opacity-95 backdrop-blur-sm z-50 pt-24 px-6 text-white
+         transform translate-x-full opacity-0 pointer-events-none
+         transition-all duration-3500 ease-in-out md:hidden">
+      <div class="flex flex-col space-y-4">
+        <a href="#home" class="text-xl py-3 px-4 hover:text-gold transition-all">Home</a>
+        <a href="#about" class="text-xl py-3 px-4 hover:text-gold transition-all">About</a>
+        <a href="#programs" class="text-xl py-3 px-4 hover:text-gold transition-all">Initiatives</a>
+        <a href="#gallery" class="text-xl py-3 px-4 hover:text-gold transition-all">Gallery</a>
+        <a href="#contact" class="text-xl py-3 px-4 hover:text-gold transition-all">Contact</a>
+      </div>
+
+      <!-- Close Button -->
+      <button id="menu-close"
+        class="absolute top-6 right-6 text-white hover:bg-white hover:bg-opacity-10 p-2 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+
+  </nav>
+  <h3 class="text-3xl font-bold text-center mt-28 font-opensans text-trust-800">Founder</h3>
+  <section class="max-w-3xl mx-auto px-4 py-10 mt-5 ">
+    <!-- Image -->
+    <img src="assets/img/Mahan.jpg" alt="Inspirational" class="mx-auto mb-6 rounded-xl shadow-lg max-h-[300px] w-auto"
+      data-aos="zoom-out" data-aos-duration="1000" />
+    <div data-aos="fade-up" data-aos-duration="1000">
+
+      <!-- Quote Block -->
+      <blockquote class="relative text-lg text-trust-700 italic font-serif leading-relaxed text-justify mb-6 px-4">
+
+        <!-- Opening Quote Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-trust-500 mb-3" viewBox="0 0 448 512"
+          fill="currentColor">
+          <path
+            d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z" />
+        </svg>
+
+        <!-- Quote Text -->
+        <p class="mt-2">
+          When we say God, he is not just for Muslims or Hindus, or any other auliya (Muslim saint) or a sanyasi (Hindu
+          monk). Is it? Because, even if a musliyar (local religious preacher) or a thangal (religious leader) sat and
+          prayed, or a sanyasi sat and prayed; the rain comes from the God; it is a rahmah (mercy). It is not only
+          falling on the houses of Hindus and Muslims. The rain fall is to all. Isn't it? Thus it is said that Allah is
+          'Rahman'. As you say Rahman, Allah helps you whether you worship Him or not, in this world; you can live even
+          if you do bad things - you are able to live even if you commit adultery, drink alcohol, or kill someone. You
+          will not be asked. The question of God is in the Hereafter; that is what 'Raheem' means.
+        </p>
+
+        <!-- Closing Quote Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-trust-500 mt-4 float-right mb-3"
+          viewBox="0 0 448 512" fill="currentColor">
+          <path
+            d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8h-64c-35.3 0-64-28.7-64-64v-64c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64v-64c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z" />
+        </svg>
+      </blockquote>
+      <br>
+      <!-- Author -->
+      <p class="mt-2 text-xl text-trust-800 font-cinzel text-end">
+        — Quthbuzzamān Dr. Sheikh Yousuf Sulthan Shāh Qādiri Chishti
+      </p>
+
+    </div>
+  </section>
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8  text-justify  space-y-6 leading-relaxed">
+    <p data-aos="fade-up" data-aos-duration="1000">
+      
+Esteemed Islamic scholar and erudite Sufi visionary of ethical social transformation of humanity, His Holiness Quthbuzzaman Dr. Sheikh Sufi Muhammad Yousuf Sulthan Shah Qadiri Chishti, is the renowned Sufi master and socio-religious reformer from contemporary south Asia. With profound knowledge in Islamic tradition and sagacious experience of guidance in Prophetic tradition and diverse paths of Sufism, Hazrat Quthbuzzaman Sheikh Yousuf Sulthan led tremendous transformation in the social and religious fields of life of modern Kerala. Based at the historical city of Cochin/Ernakulam, in the south Indian state of Kerala, the Sufi reviver and social reformer Sheikh Yousuf Sulthan Shah Qadiri Chishti actively mobilized followers across diverse communities, castes, creeds, and nationalities. Effectively initiating the Qadiri-Chishti path of spiritual awakening and relentlessly pursuing the pious humanitarian mission of peace, harmony and social welfare, Holy Hazrat Quthbuzzaman pioneered the momentous Sufi movement of ethical and humanitarian change, by imaginatively establishing the global Sufi centre of peace and harmony - Jeelani Shareef – Cochin, Kerala, and meticulously founding the dynamic Sufi platform for service to humanity - Jeelani Public Charitable Trust. Being an ardent champion of world peace and moral unity, Quthbuzzaman made substantial contributions to the communal amity by service to humanity, widely since 1975. The devout mission carried out by Holy Hazrat Quthbuzzaman is ardently advanced by his astute successor Sufi Guru Dr. Sheikh Nizamudhin Sulthan Shah Qadiri Chishti, the current Charman of Jeelani Trust and the pious custodian of Quthbuzzaman Jeelani Shareef.
+
+
+    </p>
+    <p data-aos="fade-up" data-aos-duration="1000">
+      Offering insightful knowledge with experience and in-depth Sufi guidance, Quthbuzzaman Dr. Sheikh Yousuf Sulthan Shah Qadiri Chishti dedicated himself to rearticulate and revive pristine Sufi path enshrined in the Prophetic traditions, by effectively crafting creative strategies for the moral reconstruction of a modern society.  He inspired hope and positivity among the people of diverse social and religious backgrounds, by rekindling the path of spiritual reawakening through ‘tariqah’ (Sufi moral teachings and spiritual guidance in a complete Sufi silsila) and reviving the Sufi humanitarian tradition of social service and educational empowerment for the people across myriad cultural spectrum of communities. Spanning across half a century, Quthbuzzaman Dr. Sheikh Yousuf Sulthan’s life and mission has been to reform the prevailing socio-religious plight of the modern man, and to ethically reunite the people world as harmonious humanity, against all odds and amidst the diversity and differences. Beng a beacon of hope for humanity and inspiring leadership in the larger society, Hazrat Quthbuzzaman is widely considered as an exemplary Sufi socio-religious reformer, incessantly engaged through empathetic vision and compassionate care, clear and concise teaching, courageous moral critique, and benevolent spiritual guidance in Sufi ethical tradition. 
+
+    </p>
+    <p data-aos="fade-up" data-aos-duration="1000">
+      Under the functional platform of Jeelani Trust and beyond, Hazrat Quthbuzzaman had been tirelessly initiating
+      progressive changes in society with a wide variety of social and religious projects, institutions and initiatives,
+      with pious missions, including,
+    <ul class="list-disc list-inside space-y-1" data-aos="fade-up" data-aos-duration="1000">
+      <li>providing moral guidance and spiritual mentoring,
+      </li>
+      <li> organizing a Sunni-Sufi Ulama council and Study Centre for the propagation of Sufism, teaching and critical
+        guidance in Islamic doctrine, and social and humanitarian services,
+      </li>
+      <li>reaching out to the poor and needy in society, irrespective of caste or religion,
+      </li>
+      <li>ensuring philanthropic aid for educational infrastructure and student empowerment,
+      </li>
+      <li>creatively developing advanced curriculum for Islamic and modern systems of knowledge,
+      </li>
+      <li>providing free and quality education by running Islamic and liberal institutions,</li>
+      <li>critically correcting the misled ulama and contemporary Muslim leadership on ethical standards and commitment
+        to Islamic tradition,
+      </li>
+      <li>establishing humanitarian institutions for medical care and wholistic well-being,
+      </li>
+      <li>supporting public safety and civic amenities, etc.
+      </li>
+    </ul>
+     The core initiatives under the Jeelani Trust - Jeelani Shareef (2006), Jeelani Study Centre (2002) and the Sufi
+      monthly periodical, Ghausiyya Sufi Ulama Council (2013), Al-Madeena Islamic and Arts College – 2011 (reframed as
+      Nizamia Institute in 2021)– were conceived and established primarily under the behest of Hazrat Quthbuzzaman,
+      vitally leading the larger Jeelani mission for social and religious change. Apart from the central initiatives
+      hosted in Jeelani Shareef, the Head Quraters of Jeelani mission, the advanced modern medical centre and
+      humanitarian healthcare, Thaqdees Hospitals Ltd. was developed under the far-reaching vision of
+      Hazrat Quthbuzzaman.
+    </p>
+
+    <p data-aos="fade-up" data-aos-duration="1000">
+     Hazrat Quthbuzzaman was born on the blessed day of 17th of Ramadan, 1365 AH (March 26, 1945) to the pious and scholarly household of ‘Vennipparambu’ at Aluva in the west-central Kerala. Being the settlement of his great grandfathers’ family historically taken place in the famous trading town centuries ago out of the Indo-Arab transregional religio-cultural connections, and rooted in the cosmopolitan currents of Cochin, the historic port-city that cherish the long heritage of maritime exchanges across the Indian Ocean, Shaikh Yousuf Sulthan represents also a much wider cultural historical legacy. Historically, the early origins of the family are traced back to the holy city of Madinah in medieval Hijaz. Reviving the Sufi moral idiom of life for the modern milieu and anchoring on the humanist sensibility of universal social harmony and international peace, Hzt. Quthbuzzaman’s family continued to contribute to this great regional pool of a globally sprung cultural synergy.  Currently, it is holy Naeb Quthbuzzaman Sheikh Nizamudhin Sulthan who leads the regional cosmopolitan heritage of Sufism, significantly re-presenting Islam for humanity’s survival as ethically mindful and morally interconnected subjects, and upholding the pluralist precepts to positively engage human and natural diversity on the planet. 
+
+
+    </p>
+    <p data-aos="fade-up" data-aos-duration="1000">
+   Brought up in the family of Sufi piety and Islamic scholarship, Hzt. Quthbuzzaman grew as a child with great spiritual enthusiasm and passion for learning. As ‘Quthbuzzaman Māla’ (the sacred biographic composed in eulogetic poetry and recited with ritual reverence by the followers) testifies, he began his long and difficult journey of spiritual quest in his early teenage itself. Left home for the ‘lands of Sufis’ in Bombay (Maharashtra) during the immediate years of post-independent India, he wandered through the historical Sufi localities in around Deccan. From the early 1960s to 1975, his life got abound in adventurous pursuit of spiritual knowledge and experience, spanning across distant lands and diverse spiritual stations. Spent several months in difficult locations risking life, he went through tougher stages observing riyaza (spiritual and bodily disciplining). Ranging from unpopulated crannies to the dangerously dense forests, he had been in deep meditations of longer course, across the Western Ghats. According the Quthbuzzaman’s own narrative, during these mystical duree of harder practice of meditation, he had chances of meeting Prophet Khidhr (a.s.) and Hazrat Imam Ali (R).
+
+
+
+    </p>
+    <p data-aos="fade-up" data-aos-duration="1000">
+   
+During these long years of practicing spiritual perfection and poise, Hzt. Quthbuzzaman met many a great contemporary Sufi masters, seeking advices on the path ahead. Sufi Fakhruddin Maulana (r) from Rajasthan, met at Bombay, led him to meet his Guru, Sufi Sayyid Ahmad Jamaluddin (r) of Rampur, with whom the young Hzt. Quthbuzzaman set out to Baghdad, the citadel of tariqa. At his tender age of 15, Hzt. Quthbuzzaman was present at the holy hospice of the grand master of Sufis, Ghaus al-Azam Shaikh Muhyiddin abdul Qadir al-Jeelani (r). It became a turning point in his life that the grand master of the Qadiriyya Sufi order conferred upon him the honorary title of 'Sufi Muhammad Yousuf SULTHAN’, with an insisting suggestion to abide by the foundational fact Sufi perfection, to 'renew the spiritual covenant’ with the almighty God. After assiduous years of seeking the meaning and method of the spiritual renewal, Hzt. Quthbuzzaman met with his future masters and permanent companions in his Sufi tradition. At the Jami mosque near the dargah of the renowned medieval Sufi Qamarali Durvesh (r) at the hill-top of Shivapur (Pune-Bombay), where he was serving as the Imam and a Hanafi legal scholar, Quthbuzzaman met with Shaikh Madar Shah Qadiri (r) of Pune, who in turn became the fortunate Shaikh of H.H. Quthbuzzaman, accompanied by the great Qadiri Chishti Guru, Sayyid Muhammad Badshah Qadiri Chishti (r), the Sufi with Yemeni descent settled in Wadi - Gulbarga. On 25th November 1975, H.H. Quthbuzzaman was conferred the supreme Khilafa (Holy Vicegerency) of the Qadiriyya tariqa [the spiritual authority to bai’ah (initiation), khilifa and Niyabah (authority to appoint sufi representatives and a supreme successor) by Shaikh Sayyid Muhammad Badshah (r).
+
+
+    </p>
+    <p data-aos="fade-up" data-aos-duration="1000">
+   With the greatest spiritual achievements wilayah (sainthood), by being an authentic Sufi master in highest order of perfection, Holy Shaikh Hazrat Quthbuzzaman returned to Kerala in 1975, with a greater mission of transforming the society through propagation of Sufi path and devoted services to humanity. With indissoluble courage of spiritual convictions, he had to confront the challenges posed by arrogance and pretense of the ulama and their organizational culture with regressive orthodoxies and political motivations. A resolute Sufi and keen well-wisher of society, H.H. Quthbuzzaman strove hard to counter the fake ulama hegemony and correct the prevalent misconceptions about Sufis. Since then, until his ‘Wisaal’ (sacred re-union with the God Almighty) on 25th January 2019 (19 Jumada al-Awwal 1440 AH), Holy Sufi Hazrat Quthbuzzaman Sheikh Yousuf Sulthan Shah Qadiri Chishti steadfastly kept on with his noble mission of spreading the Qadiri-Chishti Sufi tariqa (Sufi path), keen on guiding and initiating people in the tested moral-spiritual tradition of Sufism. Mobilizing the mounting number of disciples towards the massive social and moral mission of Jelani Shareef, Holy Sufi Guru Hazrat Quthbuzzaman earnestly dedicated himself for unifying humanity along the pious path of ethical perfection and soulful practice of compassion. 
+
+
+
+    </p>
+    <p data-aos="fade-up" data-aos-duration="1000">
+   In the unbroken chain of sacred ‘silsila’ of Qadiri Sufi mashaikh (masters), representing the Sufi path of spiritual awakening in the tradition of Tawhid and the ever radiant light (‘Nur’) of the holy Prophetic (peace and blessings be upon him), His Holiness Hazrat Quthbuzzaman Dr. Shaikh Sufi Muhammad Yousuf Sulthan Shah Qadiri Chishti stands as the 35th spiritual successor of Prophet Muhammad (pbuh), and the 19th Sufi descendant of Ghaus al-A’zam Sheikh ‘Muhyiddin’ Abdul Qadir al-Jeelani (may he be blessed), the supreme master and the founder of Qadiri Sufi path, established in early medieval Baghdad. Taking up the massive mission of reviving the religion and morally reconfiguring the human condition, Holy Hazrat Quthbuzzaman guided toward the pristine path of returning to the healthy vision of traditional Islam the foundation of which is thasawwuf and tariqah (ethical teaching and spiritual guidance under a perfect Sufi master), shaped by tawhid (divine unity) and sunnah (close adherence to the pious traditions of the Prophet - pbuh). 
+
+
+
+    </p>
+    <p data-aos="fade-up" data-aos-duration="1000">
+   The elegant strength of the Islamic tradition, as the Jeelani mission of Hazrat Quthbuzzaman underscored, was its clarity of the concept of humanity and its sound methodology for spiritual re-unification with the God. Notably, the best ever model of both practically and philosophical elaborating Sufism for the modern world has been solemnly represented by the holy Guru Quthbuzzaman, ingeniously recovering the ideal practices of embodying ethical elegance in life through the Sufi process of 'renewal of the spiritual contract with the God', inorder to achieve that seamless smile of success and satisfaction at the end. Through the regular Sufi congregational gatherings of Peace & Blessing, Hazrat Quthbuzzaman inculcated the universal Sufi values of suhba (companionship) and mahabba (love); the two foundational pre-requisites to re-build an ethical network of global humanity. Apparently, the global vision of Sufism is deftly designed to thwart the threat of both the fundamentalist elements and the politicized religiosities. The antidote to the growing culture of intolerance is nothing but the Sufi stabilization of ethical personality, beautifully promoted by Hazrat Quthbuzzaman and his current successor Hazrat Naeb Quthbuzzaman Dr. Sheikh Nizamudhin Sulthan. 
+
+
+    </p>
+    <p data-aos="fade-up" data-aos-duration="1000">
+   The majestic feat of Holy Hazrat Shaikh Yousuf Sulthan Shah Qadiri Chishti's spiritual authority as a Sufi master was elevated to its most glorious heights when he was honored as Quthbuzzaman, the Spiritual Pole of the Age, the most revered Sufi of an epoch. In no time, the supreme Sufi centres of the world came up to celebrate the glory of Quthbuzzaman. In India, the trustees and the grand-children of the renowned Sufi Gharib Nawaz Khwaja Mueenuddin Chishti (r) of Ajmer called for a grand convention at the Ajmer Dargah Sharif to ritually honor the great feat of H.H. Quthbuzzaman in 2016. Many more centres, the Dargah of Sayyid Ibrahim Badusha (r) Ervadi, the prime Sufi centre in south India, being an example of those who joined after Ajmer. Further internationally, recognizing his unique accomplishment as the most acclaimed authority on Sufism, Holy Hazrat Quthbuzzaman was honored by the grandchildren of Shaikh Abdul Qadir al-Jilani (r) at of Baghdad and Shaikh Ahmad al-Kabir Rifayi (r) at Basra, in Iraq. He has already been a prime international guest in the grand urs of Shaikh Abdul Qadir al-Jilani (r) in the grand dargah of Baghdad Sharif. However, since his glorious feat he began to be invited as the Esteemed Guest of Honor to the grand urs. In 2017 H.H. Quthbuzzaman led a historic pilgrimage taking 786 of his disciples from across the world to the Baghdad Sharif. The ceremony was held as a grand Sufi honor to H.H. Quthbuzzaman by the Qadiri Sufi authorities at Baghdad. 
+
+
+
+    </p>
+    <p data-aos="fade-up" data-aos-duration="1000">
+   Apart from the honour of the sacred centres, Sufi Hazrat Quthbuzzaman was also publicly felicitated by the state government department of health for his extensive contributions in the field of humanitarian model of healthcare and wholistic wellbeing, with several non-governmental secular platforms stood up to celebrate his selfless services. The honouring of Hazrat Quthbuzzaman by the prominent Hindu socio-spiritual centre in Kerala, Shanthigiri founded by Sree Narayana Guru, was an elegant addition to the public acclaim and admiration to the Sufi leader of the moder times. 
+
+
+
+    </p>
+    <p data-aos="fade-up" data-aos-duration="1000">
+   Designated by the supreme Sufi authorities in the world as the sublime gateway to the universal ground of emancipation, H.H. Quthbuzzaman had been untiring to perform the divine task of the global humanity along the lines of moral amity and spiritual companionship. Rekindling the perennial path of harmony between persons, places and nations, in the contemporary world of restless rants of disquiet and disorder., the Jeelani movement of ethical change toward a peaceful humanity stands as an enduring beacon of hope, initiated by holy Sufi Guru Quthbuzzaman and vigorously continued by the successor Sufi Holy Hazrat Naeb Quthbuzzaman Sheikh Nizamudhin Sulthan. With the wide reaching impact and growing acceptance, the efficiently executed, pious and powerful initiatives of Jeelani Trust gain greater momentum under the current Sufi leader and champion of ethical humanity and the custodian of Quthbuzzaman Jeelani Shareef, holy Naeb Quthbuzzaman Dr. Sheikh Nizamudhin Sulthan Shah Qadiri Chishti.
+
+
+    </p>
+    <hr class="my-8 mx-auto border-t-2 border-gray-300 rounded-full shadow-md">
+    <a href="index.html"
+      class=" inline-flex items-center gap-2 group font-medium text-white px-5 py-2.5 rounded-lg bg-trust-900 text-center hover:from-emerald-600 hover:to-teal-700 transition-all duration-300 shadow-lg hover:shadow-emerald-500/20">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:-translate-x-2 transition-transform align-middle"
+        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+      </svg>
+      Back to Home
+    </a>
+  </section>
+
+<footer>
+  <div class=" mt-2 py-6 text-center text-white bg-trust-800  text-sm">
+        <p>© 2025 Jeelani Trust. All Rights Reserved.</p>
+      </div>
+</footer>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/swalath.js"></script>
+  <script src="assets/js/day-remainder-arabic.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/date.js"></script>
+  <script src="assets/js/scrollspy.js"></script>
+  <!-- <script src="assets/js/special-redirect.js"></script> -->
+  <script src="assets/js/gallery-modal.js"></script>
+  <script src="assets/js/form-submission.js"></script>
+  <script src="assets/js/arabic-date-api.js"></script>
+  <script src="assets/js/add.js"></script>
+  <script src="assets/js/tailwind.config.js"></script>
+</body>
+
+</html>

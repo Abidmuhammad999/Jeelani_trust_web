@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Board of Trustees | Jeelani Trust</title>
+
+  <!-- External Meta -->
+  <script>
+    fetch("meta.html")
+      .then(res => res.text())
+      .then(data => document.head.insertAdjacentHTML("afterbegin", data));
+  </script>
+
+  <!-- Fonts and Tailwind -->
+  <link rel="icon" type="image/png" class="bg-white" href="assets/img/LOGO-ico.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+
+<body class="h-full w-full flex flex-col text-gray-600 font-quicksand">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-sm border-b border-white border-opacity-10 fixed top-0 left-0 w-full z-50 text-trust-800">
+    <div class="max-w-full">
+      <div class="flex items-center justify-between h-[72px] px-[10px] shadow-[0_2px_18px_0_rgba(129,162,182,0.2)] bg-white">
+
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <img src="assets/img/LOGO Without Text.png" alt="Jeelani Trust Logo" class="h-12 w-auto">
+          <div class="flex flex-col leading-tight">
+            <a href="index.html" class="font-bold text-2xl tracking-tight font-cinzel">Jeelani Trust</a>
+          </div>
+        </div>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex space-x-1">
+          <a href="index.html" class="nav-link px-4 py-2 font-medium hover:text-gold">Home</a>
+          <a href="index.html#about" class="nav-link px-4 py-2 font-medium hover:text-gold">About Us</a>
+          <a href="index.html#programs" class="nav-link px-4 py-2 font-medium hover:text-gold">Initiatives</a>
+          <a href="index.html#gallery" class="nav-link px-4 py-2 font-medium hover:text-gold">Gallery</a>
+          <a href="index.html#contact" class="nav-link px-4 py-2 font-medium hover:text-gold">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="md:hidden p-2 rounded-full hover:bg-gray-100" aria-label="Toggle mobile menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-trust-800 bg-opacity-95 backdrop-blur-sm z-50 pt-24 px-6 text-white transform translate-x-full opacity-0 pointer-events-none transition-all duration-700 ease-in-out md:hidden">
+      <div class="flex flex-col space-y-4">
+        <a href="index.html" class="text-xl py-3 px-4 hover:text-gold">Home</a>
+        <a href="index.html#about" class="text-xl py-3 px-4 hover:text-gold">About</a>
+        <a href="index.html#programs" class="text-xl py-3 px-4 hover:text-gold">Initiatives</a>
+        <a href="index.html#gallery" class="text-xl py-3 px-4 hover:text-gold">Gallery</a>
+        <a href="index.html#contact" class="text-xl py-3 px-4 hover:text-gold">Contact</a>
+      </div>
+      <button id="menu-close" class="absolute top-6 right-6 text-white hover:bg-white hover:bg-opacity-10 p-2 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow pt-[72px] overflow-auto">
+    <section class="max-w-4xl mx-auto px-4 py-8">
+      <h2 class="font-bold text-trust-800 mb-8 text-center font-cormorant text-3xl">BOARD OF TRUSTEES</h2>
+
+      <div class="font-quicksand text-gray-700 space-y-8">
+        <p class="text-lg text-center">
+          Jeelani Public Charitable Trust functions under a Board of Trustees. The planning, administration and the activities under the Trust are organized under the Board of Trustees.
+        </p>
+
+        <div class="space-y-8">
+          <div class="border-b border-trust-200 pb-6">
+            <h3 class="font-bold text-trust-700 uppercase tracking-wider mb-2">Chairman</h3>
+            <p class="text-xl">Sheikh Naeb Quthbuzzaman Dr. Shaikh Nizamudhin Sulthan</p>
+          </div>
+          <div class="border-b border-trust-200 pb-6">
+            <h3 class="font-bold text-trust-700 uppercase tracking-wider mb-2">Secretary</h3>
+            <p class="text-xl">C. P. Hussain Al Qasimi</p>
+          </div>
+          <div class="border-b border-trust-200 pb-6">
+            <h3 class="font-bold text-trust-700 uppercase tracking-wider mb-2">Treasurer</h3>
+            <p class="text-xl">Ziyad N.H.</p>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="index.html" class="inline-flex items-center gap-2 font-medium text-white px-6 py-3 rounded-lg bg-trust-800 hover:bg-trust-700 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            Back to Home
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-trust-800 text-white py-6 text-center text-sm">
+    <p>© 2025 Jeelani Trust. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+   <script src="assets/js/main.js"></script>
+  <script src="assets/js/swalath.js"></script>
+  <script src="assets/js/day-remainder-arabic.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/date.js"></script>
+  <script src="assets/js/scrollspy.js"></script>
+  <!-- <script src="assets/js/special-redirect.js"></script> -->
+  <script src="assets/js/gallery-modal.js"></script>
+  <script src="assets/js/form-submission.js"></script>
+  <script src="assets/js/arabic-date-api.js"></script>
+  <script src="assets/js/add.js"></script>
+  <script src="assets/js/tailwind.config.js"></script>
+  <script>
+    AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+  </script>
+</body>
+
+</html>
